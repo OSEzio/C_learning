@@ -4,9 +4,8 @@
 #include <time.h>
 #include <stdlib.h>
 #include "bubble_sr.h"
-#define N 100
-#define ROW 10
-#define COL 10
+#define N 10
+
 
 int main() {
 
@@ -15,31 +14,19 @@ int main() {
 	int arr[N] = {0};
 	for (i = 0;i < N;i++)
 	{
-		arr[i] = rand()%1000;
+		arr[i] = rand()%100;
 	}
-	printf("Ëæ»úÐòÁÐ:>\n");
-	for (i = 0;i < ROW;i++)
+	printf("éšæœºåºåˆ—:>\n");
+	for (i = 0;i < N;i++)
 	{
-		int j = 0;
-		for (j = 0;j < COL;j++)
-		{
-			printf("%d\t", arr[10*i+j]);
-		}
-		printf("\n");
+		printf("%d ", arr[i]);
 	}
 
 	bubble_sr(arr, 0, N - 1);
 
-	printf("\n\nÅÅÐòÐòÁÐ:>\n");
-	for (i = 0;i < ROW;i++)
+	printf("\n\næŽ’åºåºåˆ—:>\n");
+	for (i = 0;i < N;i++)
 	{
-		int j = 0;
-		for (j = 0;j < COL;j++)
-		{
-			printf("%d\t", arr[10 * i + j]);
-		}
-		printf("\n");
-
-
+		printf("%d ", arr[i]);
 	}
 }
