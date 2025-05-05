@@ -1,3 +1,0 @@
-﻿  test.c
-C:\Users\13906\Desktop\C语言\VS2022\bubble_test\bubble_test\test.c(13,8): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-  bubble_test.vcxproj -> C:\Users\13906\Desktop\C语言\VS2022\bubble_test\x64\Debug\bubble_test.exe
