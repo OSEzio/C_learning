@@ -74,7 +74,7 @@ void gamestart(char bd_1[ROW1][COL1],char bd_2[ROW1][COL1])//游戏进行的步骤，
 	bd_INIT(bd_1,'0');			//初始化棋盘1（棋盘1用于填充炸弹，玩家不可见
 	bd_INIT(bd_2,UNCHK);		//初始化棋盘2（棋盘2用于显示界面，玩家可见
 	boom_INIT(bd_1);			//在棋盘1上填充炸弹
-
+	system("cls");
 	//print_bd(bd_1);			//该代码用于显示棋盘，调试用，正常游玩时需要被注释掉
 	print_bd(bd_2);				//显示棋盘2，展示给玩家
 
@@ -128,7 +128,7 @@ void find_boom(char bd_1[ROW1][COL1], char bd_2[ROW1][COL1], int row, int col)
 		{
 			if ((bd_1[x][y] == '1') && bd_2[x][y] != FLAG_CHAR && flag != 2)	//如果查询的坐标为雷，并且未标记，且此时不是标记状态，则游戏结束
 			{
-				system("cls");
+				
 				printf("游戏结束\n");
 				int i = 0;
 				for (i = 1;i <= row;i++)
